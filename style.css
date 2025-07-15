@@ -1,0 +1,53 @@
+body {
+font-family: sans-serif;
+background-color: black;
+}
+#container {
+width: 1000px;
+height: 550px;
+background-image: url('pink.jpg');
+margin: 20px auto;
+background-size: cover;
+}
+#calculator{
+width: 320px;
+height: 520px;
+background-color: pink;
+margin: 0 auto;
+top: 20px;
+position: relative;
+border-radius: 5px;
+box-shadow: 0 4px 8px 0 rgb(159, 111, 119), 0 6px 20px 0 rgb(159, 111, 119);
+}
+#keyboard {
+    height: 400px
+}
+.operator,
+.number,
+.empty{
+    width: 50px;
+    height: 50px;
+    margin: 15;
+    border: 1px solid rgb(76, 5, 48);
+    float: left;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number,
+.empty{
+    background-color: aliceblue;
+}
+.number,
+.operator{
+    cursor: pointer;
+}
+.operator:active,
+.number:active{
+    font-size: 13px;
+}
+.operator:focus,
+.number:focus,
+.empty:focus{
+    outline: 0;
+}
